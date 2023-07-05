@@ -1,5 +1,5 @@
 {% set name = "openmetadata-sqllineage" %}
-{% set version = "1.1.0.1" %}
+{% set version = "1.1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openmetadata-sqllineage-{{ version }}.tar.gz
-  sha256: c9a060e61e555108ddf487e75f3627c8f080b42816c16a6137c2cbb881b7224b
+  sha256: e807db0beaeb92efdab2f7c5ab9304264e6301bd568b7dcc5360ccc8bbfaf236
 
 build:
   entry_points:
@@ -24,7 +24,7 @@ requirements:
     - python >=3.7
     - sqlparse ==0.4.3
     - networkx >=2.4
-    - sqlfluff ==2.0.2
+    - sqlfluff ==2.1.2
 
 test:
   imports:
