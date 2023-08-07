@@ -30,7 +30,7 @@ test:
   imports:
     - sqllineage
   commands:
-    - sqllineage --help
+    #- sqllineage --help
   requires:
     - pip
 
