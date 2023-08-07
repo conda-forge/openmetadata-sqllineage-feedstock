@@ -22,15 +22,16 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - sqlparse >=0.4.3
+    - sqlparse ==0.4.3  #  "sqlparse==0.4.3",
     - networkx >=2.4
-    - sqlfluff >=2.1.2
+    - sqlfluff ==2.1.2  #   "sqlfluff==2.1.2",
 
 test:
   imports:
     - sqllineage
   commands:
-    #- sqllineage --help
+    - pip check
+    - sqllineage --help
   requires:
     - pip
 
