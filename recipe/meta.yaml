@@ -13,13 +13,15 @@ build:
   entry_points:
     - sqllineage = sqllineage.cli:main
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 1
 
 requirements:
   host:
     - python {{ python_min }}
+    - sqllineage
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - sqlparse ==0.4.3
