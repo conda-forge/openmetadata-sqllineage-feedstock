@@ -19,7 +19,6 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - sqllineage
     - pip
     - setuptools
   run:
